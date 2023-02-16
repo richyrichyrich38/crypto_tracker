@@ -1,0 +1,40 @@
+a {
+    padding: 10px;
+}
+
+footer.container h5 {
+    color: #FFF;
+}
+
+footer.container p,
+a {
+    text-decoration: none;
+    color: #94A1B2;
+}
+
+footer.row {
+    display: flex;
+}
+
+footer div.col {
+    padding-top: 30px;
+}
+
+footer div.col h5 {
+    padding-bottom: 20px;
+}
+
+footer div.copy-right p {
+    text-align: center;
+}
+
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
