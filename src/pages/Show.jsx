@@ -49,6 +49,8 @@ const data = [
 ];
 
 
+
+
 function Show() {
   const store = showStore()
   const params = useParams()
@@ -78,7 +80,6 @@ function Show() {
           <Tooltip />
           <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
         </AreaChart>
-      
     </div>
   )
 }
