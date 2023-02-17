@@ -1,0 +1,81 @@
+header {
+    margin: 0 5vw;
+}
+
+a.nav-link {
+    color: #fffffe;
+    transition: all 0.5s ease;
+}
+
+a.nav-link:hover:not(:nth-child(5), :nth-child(6)) {
+    background-image: linear-gradient(124deg, rgba(135, 82, 236, 1) 0%, rgba(89, 194, 220, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.btn-outline-light {
+    --bs-btn-border-color: #59C2DC;
+    --bs-btn-hover-border-color: #8752EC;
+    --bs-btn-active-border-color: #8752EC;
+    --bs-btn-hover-bg: transparent;
+}
+
+.btn-light {
+    --bs-btn-color: #fffffe;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-border-color: transparent;
+}
+
+.sign-in {
+    color: #fffffe;
+    transition: all 0.5s ease;
+}
+
+.sign-in:hover {
+    background-image: linear-gradient(124deg, rgba(135, 82, 236, 1) 0%, rgba(89, 194, 220, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sign-up {
+    background: linear-gradient(124deg, rgb(135, 82, 236), rgb(89, 194, 220));
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.navbar-toggler-icon {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/9451/9451364.png) !important;
+}
+
+.nav-link {
+    color: white
+}
+
+.navbar>.container {
+    justify-content: flex-end !important;
+}
+
+.navbar-toggler {
+    padding: 0;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+li.nav-link:hover {
+    border-bottom: solid 1px #fffffe;
+    padding-bottom: 8px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+li.nav-item {
+    margin-bottom: 10px;
+}
