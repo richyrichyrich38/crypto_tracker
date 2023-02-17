@@ -36,7 +36,14 @@ function Landing() {
                 <Col lg={5} md={6} className={`d-flex justify-content-center ${isSmallScreen ? 'order-first' : ''}`}>
                     <img src={Illustration} className='landing-img' alt='Crypto world floating up and down' />
                 </Col>
-
+            </Row>
+            <Row>
+                <Col className='socials d-flex justify-content-end'>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-facebook fa-xl" /></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-instagram fa-xl" /></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-twitter fa-xl" /></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin fa-xl" /></a>
+                </Col>
             </Row>
         </>
     )
