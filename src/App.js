@@ -10,9 +10,7 @@ import Footer from './pages/components/Footer';
 
 function App() {
     return (
-
         <div className='bodyContainer' id='bodyContainer'>
-
             <Footer />
         </div>
     )
