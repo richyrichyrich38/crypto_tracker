@@ -1,0 +1,22 @@
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-content {
+    background-color: #1e1e23;
+}
+
+.signin-btn, .signup-btn {
+    background: linear-gradient(124deg, rgb(135, 82, 236), rgb(89, 194, 220));
+    transition: all 0.8s ease;
+}
+
+.btn-light {
+    --bs-btn-color: #fffffe;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-border-color: transparent;
+}
+
+.btn-close {
+    background: transparent url('https://cdn-icons-png.flaticon.com/512/458/458595.png') center/1em auto no-repeat;
+}
