@@ -32,7 +32,6 @@ function Header() {
               <Nav className="me-auto">
                 <Nav.Link to="/">Home</Nav.Link>
                 <Nav.Link to="/dashboard">Dashboard</Nav.Link>
-                <Nav.Link to="/news">News</Nav.Link>
                 <Nav.Link to="/about">About</Nav.Link>
                 <Nav.Link to="/contact">Contact</Nav.Link>
                 <Button variant="outline-light" className="sign-in" onClick={handleSignInClick}>Sign In</Button>
