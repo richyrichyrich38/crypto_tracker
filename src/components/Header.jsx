@@ -3,8 +3,24 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './header.css'
 import Button from 'react-bootstrap/Button';
+import React, { useState } from "react";
+
+import SignIn from './SignIn';
+import SignUp from './SignUp';
 
 function Header() {
+  const [showSignInModal, setShowSignInModal] = useState(false);
+
+  const handleSignInClick = () => {
+    setShowSignInModal(true);
+  };
+
+  const [showSignUpModal, setShowSignUpModal] = useState(false);
+
+  const handleSignUpClick = () => {
+    setShowSignUpModal(true);
+  };
+
   return (
     <header>
       <div className="d-flex justify-content-between align-items-center">
@@ -16,18 +32,20 @@ function Header() {
               <Nav className="me-auto">
                 <Nav.Link to="/">Home</Nav.Link>
                 <Nav.Link to="/dashboard">Dashboard</Nav.Link>
+                <Nav.Link to="/news">News</Nav.Link>
                 <Nav.Link to="/about">About</Nav.Link>
                 <Nav.Link to="/contact">Contact</Nav.Link>
-                <Nav.Link to="/sign-in"><Button variant="outline-light" className='sign-in'>Sign In</Button></Nav.Link>
-                <Nav.Link to="sign-up"><Button variant="light" className='sign-up'>Sign Up</Button></Nav.Link>
+                <Button variant="outline-light" className="sign-in" onClick={handleSignInClick}>Sign In</Button>
+                <Button variant="light" className='sign-up ms-3' onClick={handleSignUpClick}>Sign Up</Button>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </div>
+      <SignIn showModal={showSignInModal} setShowModal={setShowSignInModal} />
+      <SignUp showModal={showSignUpModal} setShowModal={setShowSignUpModal} />
     </header>
   )
 }
 
 export default Header;
-

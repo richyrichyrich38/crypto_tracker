@@ -16,7 +16,7 @@ a.nav-link:hover:not(:nth-child(5), :nth-child(6)) {
 }
 
 .btn-outline-light {
-    --bs-btn-border-color: #59C2DC;
+    --bs-btn-border-color: #6c93e2;
     --bs-btn-hover-border-color: #8752EC;
     --bs-btn-active-border-color: #8752EC;
     --bs-btn-hover-bg: transparent;
@@ -43,6 +43,7 @@ a.nav-link:hover:not(:nth-child(5), :nth-child(6)) {
 
 .sign-up {
     background: linear-gradient(124deg, rgb(135, 82, 236), rgb(89, 194, 220));
+    transition: all 0.8s ease;
 }
 
 .navbar-nav {
