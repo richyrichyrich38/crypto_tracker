@@ -1,0 +1,54 @@
+ .title{
+    font-weight: 700;
+    color:#FFFFFE;
+    position: relative;left: -30px; max-width: 70%;
+    margin: 20PX;
+    padding: 10px; 
+    margin-left: 0px;
+    padding-left: 0px;
+
+}
+.text{
+    position: relative;
+    left: -30px;
+    max-width: 60%;
+    font-size: 25px;
+    color: #94A1B2; 
+    
+     
+}
+
+
+ 
+ .span{
+    background: linear-gradient(91.05deg, #8752EC 0%, #59C2DC 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+ }
+
+ 
+ 
+ 
+ @media only screen and (max-width: 760px){
+
+    .text {
+        text-align: left;
+     
+        padding: 20px;
+      
+    }
+
+    .title{
+        padding: 20px;
+        max-width: 100%;
+        font-size: 40px;
+      
+    }
+    
+
+    .lowerText{
+        padding: 10px;
+        position: relative;
+        top: 400px;
+    }
+ }
