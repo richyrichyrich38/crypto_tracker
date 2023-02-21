@@ -1,0 +1,99 @@
+.dashboard-header {
+    margin-bottom: 1rem;
+}
+
+.dashboard-intro {
+    color: #94A1B2;
+}
+
+.text-gradient {
+    background-image: linear-gradient(124deg, rgba(135, 82, 236, 1) 0%, rgba(89, 194, 220, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Trending section */
+p {
+    margin: 0;
+}
+
+.card {
+    margin-bottom: 2.8vh;
+    --bs-card-border-color: #6c93e2;
+}
+
+.card-body {
+    background-color: #1e1e23;
+    border-radius: 5px;
+}
+
+.crypto-icon {
+    width: 30px;
+}
+
+.crypto-name {
+    margin-left: 1rem;
+}
+
+.increase-decrease {
+    font-size: smaller;
+}
+
+a {
+    color: #fffffe;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fffffe;
+}
+
+/* Overview section */
+.graph-container {
+    background-color: #1e1e23;
+    height: 65.7vh;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #6c93e2;
+}
+
+.graph-note {
+    color: #94A1B2;
+    font-size: x-small;
+    margin-bottom: 3vh;
+}
+
+.sell {
+    margin-right: 1rem;
+    color: #fffffe;
+    transition: all 0.5s ease;
+}
+
+.sell:hover {
+    background-image: linear-gradient(124deg, rgba(135, 82, 236, 1) 0%, rgba(89, 194, 220, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.btn-outline-light {
+    --bs-btn-border-color: #6c93e2;
+    --bs-btn-hover-border-color: #8752EC;
+    --bs-btn-active-border-color: #8752EC;
+    --bs-btn-hover-bg: transparent;
+}
+
+.buy {
+    background: linear-gradient(124deg, rgb(135, 82, 236), rgb(89, 194, 220));
+    transition: all 0.8s ease;
+}
+
+.btn-light {
+    --bs-btn-color: #fffffe;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-border-color: transparent;
+}
