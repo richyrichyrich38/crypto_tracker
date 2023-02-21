@@ -1,7 +1,7 @@
  .title{
     font-weight: 700;
     color:#FFFFFE;
-    position: relative;left: -30px; max-width: 70%;
+    
     margin: 20PX;
     padding: 10px; 
     margin-left: 0px;
@@ -9,9 +9,10 @@
 
 }
 .text{
-    position: relative;
-    left: -30px;
-    max-width: 60%;
+    padding: 20px;
+    position: absolute;
+    left: 1%;
+    max-width: 55%;
     font-size: 25px;
     color: #94A1B2; 
     

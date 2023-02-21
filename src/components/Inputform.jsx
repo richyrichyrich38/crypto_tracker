@@ -1,4 +1,4 @@
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { FormGroup } from "react-bootstrap";
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form";
@@ -11,11 +11,10 @@ const backGroundColor = {
 function Inputform() {
   return (
     <Container>
-      <Row>
         <Form className={styles.input}>
           <Form.Group className="mb-3">
             <Form.Control
-              className={styles.formstyles}
+              className={styles.Form}
               type="text"
               placeholder="Name"
               style={backGroundColor}
@@ -24,7 +23,7 @@ function Inputform() {
 
           <Form.Group className="mb-3">
             <Form.Control
-              className={styles.formstyles}
+              className={styles.Form}
               type="email"
               placeholder="Email"
               style={backGroundColor}
@@ -36,7 +35,7 @@ function Inputform() {
 
           <FormGroup className="mb-3">
             <Form.Control
-              className={styles.formstyles}
+              className={styles.Form}
               placeholder="Message"
               style={backGroundColor}
               as="textarea"
@@ -49,7 +48,7 @@ function Inputform() {
           </Button>
           <div className={styles.divider}></div>
         </Form>
-      </Row>
+     
     </Container>
   );
 }

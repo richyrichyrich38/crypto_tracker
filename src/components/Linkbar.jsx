@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LinkbarMin from "./LinkbarMin";
 
+
 import styles from "../components/css/Linkbar.module.css";
 
 function Linkbar() {
@@ -11,21 +12,21 @@ function Linkbar() {
     <div>
       <LinkbarMin />
       <Navbar className={styles.Linkbar}>
-        <Navbar.Brand className={styles.navtitle} href="#home">
+        <Navbar.Brand className={styles.navtitle} href="/Home">
           CryptoVault
         </Navbar.Brand>
 
         <Nav className="me-auto">
-          <Nav.Link className={styles.navlink} href="#home">
+          <Nav.Link className={styles.navlink} href="/Home">
             Home
           </Nav.Link>
-          <Nav.Link className={styles.navlink} href="#Dashboard">
+          <Nav.Link className={styles.navlink} href="/Dashboard">
             Dashboard
           </Nav.Link>
-          <Nav.Link className={styles.navlink} href="#About">
+          <Nav.Link className={styles.navlink} href="/Landing">
             About
           </Nav.Link>
-          <Nav.Link className={styles.navlink} href="#Contact">
+          <Nav.Link className={styles.navlink} href="/Contact">
             Contact
           </Nav.Link>
         </Nav>
