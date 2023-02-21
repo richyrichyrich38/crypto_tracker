@@ -24,6 +24,7 @@ function Footer() {
 
 
             <Row className='row  footerRows justify-content-md-center' id='footerRows' >
+                {/*Breaking points: https://react-bootstrap.github.io/layout/breakpoints/ */}
                 <ThemeProvider
                     breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
                     maxBreakpoint="md"
