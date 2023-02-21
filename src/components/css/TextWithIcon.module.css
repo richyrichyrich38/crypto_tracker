@@ -1,0 +1,14 @@
+.content{
+    
+   font-size: larger;
+}
+
+
+.text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    max-width: 300px; 
+
+}
+

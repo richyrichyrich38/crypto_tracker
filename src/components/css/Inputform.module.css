@@ -1,0 +1,45 @@
+.input {
+    text-align: right;
+        position: absolute;
+        top: 230px;
+        max-width: 30%;
+        max-height: 30%;
+        right: 10%;
+}
+
+.Formstyles{
+border: 2px solid;
+border-image:linear-gradient(91.05deg, #8752EC 0%, #59C2DC 100%)1;
+border-radius: 10px;
+}
+
+
+.btnSub{
+    background: linear-gradient(91.05deg, #8752EC 0%, #59C2DC 100%);
+}
+
+.divider {
+    position: absolute;
+        width: 1px;
+        height: 500px;
+        left: -30px;
+        top: -10%;
+        background: linear-gradient(180deg, #8752EC 0%, #59C2DC 100%);
+         
+}
+
+ @media only screen and (max-width: 760px) {
+    .input{
+        position: relative;
+            padding-left: 50px;
+            top: -1100px;
+            max-width: fit-content;
+       
+    }
+
+    .divider{
+        display: none;
+    }
+   
+   }
+ 
