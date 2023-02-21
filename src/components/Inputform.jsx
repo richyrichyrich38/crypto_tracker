@@ -15,7 +15,7 @@ function Inputform() {
         <Form className={styles.input}>
           <Form.Group className="mb-3">
             <Form.Control
-              className={styles.Formstyles}
+              className={styles.formstyles}
               type="text"
               placeholder="Name"
               style={backGroundColor}
@@ -24,7 +24,7 @@ function Inputform() {
 
           <Form.Group className="mb-3">
             <Form.Control
-              className={styles.Formstyles}
+              className={styles.formstyles}
               type="email"
               placeholder="Email"
               style={backGroundColor}
@@ -36,7 +36,7 @@ function Inputform() {
 
           <FormGroup className="mb-3">
             <Form.Control
-              className={styles.Formstyles}
+              className={styles.formstyles}
               placeholder="Message"
               style={backGroundColor}
               as="textarea"
