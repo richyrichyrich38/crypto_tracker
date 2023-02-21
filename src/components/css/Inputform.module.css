@@ -7,7 +7,7 @@
         right: 10%;
 }
 
-.Formstyles{
+.formstyles{
 border: 2px solid;
 border-image:linear-gradient(91.05deg, #8752EC 0%, #59C2DC 100%)1;
 border-radius: 10px;
@@ -32,7 +32,7 @@ border-radius: 10px;
     .input{
         position: relative;
             padding-left: 50px;
-            top: -1100px;
+            top: -980px;
             max-width: fit-content;
        
     }
