@@ -17,11 +17,11 @@ function LinkbarMin() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#Home">Home</Nav.Link>
-            <Nav.Link href="#About">About</Nav.Link>
+            <Nav.Link href="/Home">Home</Nav.Link>
+            <Nav.Link href="/About">About</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#Contact">Contact Us</Nav.Link>
+            <Nav.Link href="/Contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

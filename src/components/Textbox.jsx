@@ -2,23 +2,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../components/css/Textbox.module.css";
 import TextWithIcon from "./Textboxwithicon";
 import Icons from "./Icons";
-import { Container } from "react-bootstrap";
-import Row from "react-bootstrap/Row";
+
 
 
 
 function Textbox() {
   return (
-    <Container>
-      <Row>
-        <div>
+    <div>
+        <div className={styles.text}>
           <h1 className={styles.title}>
             Get in Touch with{" "}
             <span className={styles.span}>CryptoVault Team</span>
           </h1>
-
-          <div className={styles.text}>
             <div className={styles.upperText}>
+              
               <p>
                 At CryptoVault, we value your inquiries and feedback, and we are
                 committed to providing you with timely and helpful responses to
@@ -43,9 +40,9 @@ function Textbox() {
               </p>
             </div>
           </div>
-        </div>
-      </Row>
-    </Container>
+      
+      </div>
+     
   );
 }
 

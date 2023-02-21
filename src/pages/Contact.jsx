@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import styles from "../components/css/Page.module.css";
 import Inputform from "../components/Inputform"
 import Textbox from "../components/Textbox";
@@ -11,10 +11,10 @@ function Contact() {
   return (
     <div>
       <Linkbar />
-      <Container className={styles.content}>
+      <div className={styles.content}>
         <Textbox />
-        <Inputform />
-      </Container>
+        <Inputform/>
+      </div>
     </div>
   );
 }
