@@ -1,7 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './header.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './header.css'
 import Button from 'react-bootstrap/Button';
 import React, { useState } from "react";
 

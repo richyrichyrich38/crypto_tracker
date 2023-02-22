@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './dashboard.css';
 import { Row, Col, Container, Card, Button } from 'react-bootstrap';
 
@@ -25,7 +26,7 @@ function Dashboard() {
                                         </div>
                                         <div className='d-flex flex-column align-items-end'>
                                             <p className='mb-2'>$ 21970.90</p>
-                                            <p className='increase-decrease'>- 61.24(-0.28%)</p>
+                                            <p>- 61.24(-0.28%)</p>
                                         </div>
                                     </div>
                                 </Card.Body>

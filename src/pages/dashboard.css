@@ -37,16 +37,16 @@ p {
     margin-left: 1rem;
 }
 
-.increase-decrease {
-    font-size: smaller;
-}
-
 a {
     color: #fffffe;
     text-decoration: none;
 }
 
 a:hover {
+    color: #fffffe;
+}
+
+hr {
     color: #fffffe;
 }
 
