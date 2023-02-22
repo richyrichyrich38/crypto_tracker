@@ -1,0 +1,40 @@
+.form-container {
+    border-left: 2px solid #6c93e2;
+}
+
+.mail-note {
+    font-size: smaller;
+}
+
+.fa-circle-info {
+    opacity: .4;
+}
+
+.btn {
+    width: fit-content;
+}
+
+.submit-btn {
+    background: linear-gradient(124deg, rgb(135, 82, 236), rgb(89, 194, 220));
+    transition: all 0.8s ease;
+}
+
+.btn-light {
+    --bs-btn-color: #fffffe;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-border-color: transparent;
+}
+
+input {
+    height: 40px;
+}
+
+input, textarea {
+    background-color: #1e1e23;
+    border: 1px solid #6c93e2;
+    border-radius: 5px;
+}
+
+input:not(:nth-child(2)), textarea {
+    margin-bottom: 1rem;
+}

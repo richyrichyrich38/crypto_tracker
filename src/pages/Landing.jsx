@@ -1,4 +1,5 @@
-import './landing.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './landing.css';
 import React, { useState, useEffect } from 'react';
 // import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';

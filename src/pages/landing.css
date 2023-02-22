@@ -49,6 +49,7 @@ p {
 
 input#search {
     padding-right: 40px;
+    background-color: #fffffe;
     background-image: url("https://cdn-icons-png.flaticon.com/512/149/149852.png");
     background-size: 20px;
     background-repeat: no-repeat;
