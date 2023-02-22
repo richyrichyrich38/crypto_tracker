@@ -3,7 +3,10 @@ import './landing.css';
 import React, { useState, useEffect } from 'react';
 // import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row'
+import Row from 'react-bootstrap/Row';
+
+import homeStore from '../stores/homeStore';
+import { Link } from 'react-router-dom';
 
 import Illustration from '../landing-illustration.png';
 
@@ -23,6 +26,12 @@ function Landing() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const store = homeStore();
+
+    React.useEffect(() => {
+        store.fetchCoins()
+    }, [])
+
     return (
         <>
             <Row id='landing' className={`d-flex align-items-center justify-content-evenly ${isSmallScreen ? 'flex-wrap' : ''}`}>
@@ -30,8 +39,19 @@ function Landing() {
                     <h1>Unlock the World of <span className="text-gradient">Cryptocurrencies</span></h1>
                     <p>Welcome to CryptoVault, your one-stop destination for everything related to cryptocurrencies.You can track the performance of various cryptocurrencies, including Bitcoin, Ethereum, and others, using our real-time charts and indicators.</p>
                     <form>
-                        <input type="text" id="search" name="search" placeholder="Search 12,000+ tokens..." />
-                        {/* <button type="submit">Go</button> */}
+                        <input type='text' value={store.query} id="search" name="search" placeholder="Search 12,000+ tokens..." onChange={store.setQuery} />
+                        {store.coins.map(coin => {
+                            return (
+                                <div key={coin.id} className="trending-list mt-2">
+                                    {coin.capRank}
+                                    <Link style={{ textDecoration: 'none', color: '#6c93e2' }} to={`/${coin.id}`}>
+                                        <img src={coin.image} /> {` ${coin.name}`}
+
+                                    </Link>
+                                    {`   (${coin.symbol})`}
+                                </div>
+                            )
+                        })}
                     </form>
                 </Col>
                 <Col lg={5} md={6} className={`d-flex justify-content-center ${isSmallScreen ? 'order-first' : ''}`}>
