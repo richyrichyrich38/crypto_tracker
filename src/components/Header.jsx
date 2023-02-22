@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import React, { useState } from "react";
+// import { NavLink } from "react-router-dom";
 
 import SignIn from './SignIn';
 import SignUp from './SignUp';
@@ -31,10 +32,10 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link to="/">Home</Nav.Link>
-                <Nav.Link to="/dashboard">Dashboard</Nav.Link>
-                <Nav.Link to="/about">About</Nav.Link>
-                <Nav.Link to="/contact">Contact</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href="/contact">Contact</Nav.Link>
                 <Button variant="outline-light" className="sign-in" onClick={handleSignInClick}>Sign In</Button>
                 <Button variant="light" className='sign-up ms-3' onClick={handleSignUpClick}>Sign Up</Button>
               </Nav>

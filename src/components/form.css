@@ -33,6 +33,7 @@ input, textarea {
     background-color: #1e1e23;
     border: 1px solid #6c93e2;
     border-radius: 5px;
+    color: #fffffe;
 }
 
 input:not(:nth-child(2)), textarea {

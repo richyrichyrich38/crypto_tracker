@@ -2,10 +2,8 @@ import './show.css'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import showStore from '../stores/showStore'
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import Header from '../components/Header'
-
 
 function Show() {
   const store = showStore()
@@ -21,14 +19,13 @@ function Show() {
 
   return (
     <>
-      <Header />
       <Container className='mt-4'>
         <Card>
           <Card.Body>
             <div className='d-flex align-items-center justify-content-between'>
               {store.dataRes && (
                 <div className='d-flex align-items-center'>
-                  <img className='store-img' src={store.dataRes.data.image.large} />
+                  <img className='store-img' src={store.dataRes.data.image.large} alt='Crypto icon.' />
                   <div className='d-flex flex-column ms-3'>
                     <h3>
                       {store.dataRes.data.name}
