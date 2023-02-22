@@ -1,0 +1,13 @@
+.card {
+    margin-bottom: 2.8vh;
+    --bs-card-border-color: #6c93e2;
+}
+
+.card-body {
+    background-color: #1e1e23;
+    border-radius: 5px;
+}
+
+.store-img {
+    width: 50px;
+}
