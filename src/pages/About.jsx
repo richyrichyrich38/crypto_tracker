@@ -25,21 +25,21 @@ const About = () => {
             <Row className='my-4'>
                 <Col>
                     <Container className='feature-card'>
-                        <img className='feature-img' src={MarketData} alt='...' />
+                        <img className='feature-img' src={MarketData} alt='graph illustration' />
                         <h4 className='my-2'>Real-time Market Data</h4>
                         <p>We provide real-time updates on market trends and prices for all digital assets listed on our platform. You can view live price charts to get the most up-to-date information.</p>
                     </Container>
                 </Col>
                 <Col>
                     <Container className='feature-card'>
-                        <img className='feature-img' src={Assets} alt='...' />
+                        <img className='feature-img' src={Assets} alt='coin illustration' />
                         <h4 className='my-2'>Diverse Digital Assets</h4>
                         <p>We offer a diverse range of digital assets to trade. With our platform, you can diversify your portfolio and take advantage of new investment opportunities, helping you reach your financial goals.</p>
                     </Container>
                 </Col>
                 <Col>
                     <Container className='feature-card'>
-                        <img className='feature-img' src={Support} alt='...' />
+                        <img className='feature-img' src={Support} alt='laptop with messages illustration' />
                         <h4 className='my-2'>24/7 Support</h4>
                         <p>Get reliable and responsive support from our friendly and knowledgeable support team, available 24/7 to help you with any questions or issues you may encounter.</p>
                     </Container>
