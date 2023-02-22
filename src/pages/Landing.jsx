@@ -42,10 +42,10 @@ function Landing() {
                         <input type='text' value={store.query} id="search" name="search" placeholder="Search 12,000+ tokens..." onChange={store.setQuery} />
                         {store.coins.map(coin => {
                             return (
-                                <div key={coin.id} className="trending-list">
+                                <div key={coin.id} className="trending-list mt-2">
                                     {coin.capRank}
-                                    <Link style={{ textDecoration: 'none' }} to={`/${coin.id}`}>
-                                        <img src={coin.image} /> {`   (${coin.name})`}
+                                    <Link style={{ textDecoration: 'none', color: '#6c93e2' }} to={`/${coin.id}`}>
+                                        <img src={coin.image} /> {` ${coin.name}`}
 
                                     </Link>
                                     {`   (${coin.symbol})`}

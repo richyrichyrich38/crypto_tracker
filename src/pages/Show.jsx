@@ -25,7 +25,7 @@ function Show() {
       <Container className='mt-4'>
         <Card>
           <Card.Body>
-            <div className='d-flex align-items-start justify-content-between'>
+            <div className='d-flex align-items-center justify-content-between'>
               {store.dataRes && (
                 <div className='d-flex align-items-center'>
                   <img className='store-img' src={store.dataRes.data.image.large} />
@@ -54,8 +54,8 @@ function Show() {
             </div>
           </Card.Body>
         </Card>
-        <Row className='mt-4'>
-          <Col lg={6} md={6} sm={12}>
+        <Row className='d-flex align-items-start mt-4'>
+          <Col lg={6} md={12} sm={12} className='mt-4'>
             <AreaChart
               width={500}
               height={400}
@@ -74,58 +74,62 @@ function Show() {
               <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
             </AreaChart>
           </Col>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={12} sm={12}>
             {store.dataRes && (
               <div>
                 <h4>Description</h4>
                 <p>{store.dataRes.data.description.en}</p>
               </div>
             )}
-            <Row>
+            <Row className='mt-4'>
               <Col>
                 <div className='d-flex justify-content-between'>
-                  {store.dataRes && (
-                    <div>
-                      <h6>24h Percentage Price Change</h6>
-                      <p>{store.dataRes.data.market_data.price_change_percentage_24h.toFixed(2)}%</p>
-                    </div>
-                  )}
-                  {store.dataRes && (
-                    <div>
-                      <h6>24h Price Change USD</h6>
-                      <p>${store.dataRes.data.market_data.price_change_24h_in_currency.usd.toFixed(3)}</p>
-                    </div>
-                  )}
-                </div>
-                <div className='d-flex justify-content-between'>
-                {store.dataRes && (
                   <div>
-                    <h6>24h Low</h6>
-                    <p>${store.dataRes.data.market_data.low_24h.usd.toFixed(3)}</p>
+                    {store.dataRes && (
+                      <div>
+                        <h6>24h Percentage Price Change</h6>
+                        <p>{store.dataRes.data.market_data.price_change_percentage_24h.toFixed(2)}%</p>
+                      </div>
+                    )}
+
+                    {store.dataRes && (
+                      <div>
+                        <h6>24h Low</h6>
+                        <p>${store.dataRes.data.market_data.low_24h.usd.toFixed(3)}</p>
+                      </div>
+                    )}
+
+                    {store.dataRes && (
+                      <div>
+                        <h6>Circulating Supply</h6>
+                        <p>{store.dataRes.data.market_data.circulating_supply.toFixed(0)} tokens</p>
+                      </div>
+                    )}
                   </div>
-                )}
-                {store.dataRes && (
                   <div>
-                    <h6>24h High</h6>
-                    <p>${store.dataRes.data.market_data.high_24h.usd.toFixed(3)}</p>
+                    {store.dataRes && (
+                      <div>
+                        <h6>24h Price Change USD</h6>
+                        <p>${store.dataRes.data.market_data.price_change_24h_in_currency.usd.toFixed(3)}</p>
+                      </div>
+                    )}
+
+                    {store.dataRes && (
+                      <div>
+                        <h6>24h High</h6>
+                        <p>${store.dataRes.data.market_data.high_24h.usd.toFixed(3)}</p>
+                      </div>
+                    )}
+
+                    {store.dataRes && (
+                      <div>
+                        <h6>1y Percentage Change</h6>
+                        <p>
+                          {store.dataRes.data.market_data.price_change_percentage_1y.toFixed(2)}%
+                        </p>
+                      </div>
+                    )}
                   </div>
-                )}
-                </div>
-                <div className='d-flex justify-content-between'>
-                {store.dataRes && (
-                  <div>
-                    <h6>Circulating Supply</h6>
-                    <p>{store.dataRes.data.market_data.circulating_supply.toFixed(0)} tokens</p>
-                  </div>
-                )}
-                {store.dataRes && (
-                  <div>
-                    <h6>1y Percentage Change</h6>
-                    <p>
-                      {store.dataRes.data.market_data.price_change_percentage_1y.toFixed(2)}%
-                    </p>
-                  </div>
-                )}
                 </div>
               </Col>
             </Row>
