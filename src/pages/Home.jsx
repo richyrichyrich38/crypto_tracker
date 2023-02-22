@@ -1,8 +1,16 @@
+import '../index.css'
 import React from 'react'
+import Header from '../components/Header'
+import Landing from './Landing'
 
 function Home() {
+
+
   return (
-    <div>Home</div>
+    <>
+    <Header />
+    <Landing />
+    </>
   )
 }
 

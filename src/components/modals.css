@@ -2,6 +2,10 @@
     border: none;
 }
 
+.modal-title, .form-label {
+    color: #fffffe;
+}
+
 .modal-content {
     background-color: #1e1e23;
 }
