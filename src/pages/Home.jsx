@@ -4,9 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import Header from '../components/Header'
 import Landing from './Landing'
 import Show from "./Show";
-import Dashboard from './Dashboard'
-import About from './About'
-import Contact from './Contact'
+import Dashboard from './Dashboard';
+import About from './About';
+import Contact from './Contact';
 
 function Home() {
   return (

@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './landing.css';
 import React, { useState, useEffect } from 'react';
-// import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
@@ -33,7 +33,7 @@ function Landing() {
     }, [])
 
     return (
-        <>
+        <Container fluid>
             <Row id='landing' className={`d-flex align-items-center justify-content-evenly ${isSmallScreen ? 'flex-wrap' : ''}`}>
                 <Col lg={7} md={6} className={`landing-content ${isSmallScreen ? 'order-last' : ''}`}>
                     <h1>Unlock the World of <span className="text-gradient">Cryptocurrencies</span></h1>
@@ -59,14 +59,14 @@ function Landing() {
                 </Col>
             </Row>
             <Row>
-                <Col className='socials d-flex justify-content-end'>
+                <Col className='socials d-flex justify-content-end mb-2'>
                     <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-facebook fa-xl" /></a>
                     <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-instagram fa-xl" /></a>
                     <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-twitter fa-xl" /></a>
                     <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin fa-xl" /></a>
                 </Col>
             </Row>
-        </>
+        </Container>
     )
 }
 
