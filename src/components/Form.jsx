@@ -50,7 +50,7 @@ function Form() {
                 </div>
                 <textarea value={formData.userMessage} onChange={handleChange} name="userMessage" cols="30" rows="5" placeholder="Enter a message..." required></textarea>
                 <div className='d-flex justify-content-end'>
-                    <Button variant='light' className='submit-btn'>Submit</Button>
+                    <Button variant='light' className='submit-btn' type='submit'>Submit</Button>
                 </div>
             </form>
         </Container>
