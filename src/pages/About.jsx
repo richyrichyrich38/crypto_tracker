@@ -1,4 +1,4 @@
-Import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './About.css';
 import React from 'react';
 import AboutIllustration from '../about-illustration.png';
