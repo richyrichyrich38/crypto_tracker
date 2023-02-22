@@ -15,6 +15,7 @@ function Form() {
     const handleChange = event => {
         const prop = event.target.name;
 
+
         setFormData({
             ...formData,
             [prop]: event.target.value
