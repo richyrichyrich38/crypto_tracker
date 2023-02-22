@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# CryptoVault
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Contents
 
-## Available Scripts
+- [Description](#Description)
+- [Technologies](#technologies-used)
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Live Application](#live-application)
+- [License](#license)
+- [Credit](#credit)
 
-In the project directory, you can run:
+# Description
 
-### `npm start`
+User Story - As cryptocurrencies gain popularity, we wanting to give users a simple to use interface that allowed them to keep track of and look back on the history of different tokens.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Development Road-map
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create a easy to navigate UI
+- Find and implement a API that displays information about Crypto. For data we used CoinGecko’s api’s, namely: coins_id, trending market_chart and search. <br> We also utilized debounce to delay user search by 500ms increasing site performance, we also used Axios (for Ajax requests), sass(styling), zustand (for state), recharts (for visual graph) and react-router-dom (for routing).
+- Once the API was implemented, the application was deployed via Netlify for others to access it.
 
-### `npm test`
+## Technologies-used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## [![HTML](https://img.shields.io/badge/HTML-2ea44f)](https://) [![CSS](https://img.shields.io/badge/CSS-3234a8)](https://) [![Javascipt](https://img.shields.io/badge/Javascipt-a8a232)](https://) ![React](https://img.shields.io/badge/React-7594f0) ![Bootstrap](https://img.shields.io/badge/Bootstrap-c064cc)
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Search for any cryptocurrency listed on Coingecko
+- View a 7 day performance chart (powered by recharts that presents the data provided by coingecko’s market chart api)
+- View the current price of any cryptocurrency in usd
+- View the full description of the token/project
+- View the daily percentage changes
+- View the daily price difference in usd
+- View the highs and lows over the previous 24 hours
+- View the current market cap
+- View the current market cap rank
+- View the total supply of coins
+- View the 24 hour trading volume
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Live application
 
-### `npm run eject`
+# Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone or download the repository
+2. Install the dependencies with `npm install`
+3. Start the app with `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After starting the application, you should see a search bar at the top of the page. <br> Simply enter the name of the cryptocurrency you'd like to track and the app will display the current price and other related information.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# License
 
-## Learn More
+This project is licensed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Code Splitting
+# Credit
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### CodeBreakers-
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Richard Hills - https://github.com/richyrichyrich38 <br>
+Sophia JJ Ellis - https://github.com/SophiaEllis-dot <br>
+Andreea Ghenea - https://github.com/agh911 <br>
+Zakaria Khan - https://github.com/Zakaria1986 <br>
+Sade Joseph - https://github.com/SadeJoseph
