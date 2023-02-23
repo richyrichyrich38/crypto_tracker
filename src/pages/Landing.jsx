@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './landing.css';
 import React, { useState, useEffect } from 'react';
-// import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
@@ -33,7 +33,7 @@ function Landing() {
     }, [])
 
     return (
-        <>
+        <Container fluid>
             <Row id='landing' className={`d-flex align-items-center justify-content-evenly ${isSmallScreen ? 'flex-wrap' : ''}`}>
                 <Col lg={7} md={6} className={`landing-content ${isSmallScreen ? 'order-last' : ''}`}>
                     <h1>Unlock the World of <span className="text-gradient">Cryptocurrencies</span></h1>
@@ -45,7 +45,7 @@ function Landing() {
                                 <div key={coin.id} className="trending-list mt-2">
                                     {coin.capRank}
                                     <Link style={{ textDecoration: 'none', color: '#6c93e2' }} to={`/${coin.id}`}>
-                                        <img src={coin.image} /> {` ${coin.name}`}
+                                        <img src={coin.image} alt='Crypto icon.' /> {` ${coin.name}`}
 
                                     </Link>
                                     {`   (${coin.symbol})`}
@@ -66,7 +66,7 @@ function Landing() {
                     <a href="#" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin fa-xl" /></a>
                 </Col>
             </Row>
-        </>
+        </Container>
     )
 }
 

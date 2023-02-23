@@ -18,7 +18,7 @@ function Dashboard() {
                                 <Card.Body>
                                     <div className='d-flex align-items-center justify-content-between'>
                                         <div className='d-flex align-items-center justify-content-center'>
-                                            <img className='crypto-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968260.png' alt='crypto' />
+                                            <img className='crypto-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968260.png' alt='Crypto icon.' />
                                             <div className="crypto-name d-flex flex-column">
                                                 <h4 className='mb-2'>BTC</h4>
                                                 <p>Bitcoin</p>

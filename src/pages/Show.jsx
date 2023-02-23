@@ -28,7 +28,7 @@ function Show() {
             <div className='d-flex align-items-center justify-content-between'>
               {store.dataRes && (
                 <div className='d-flex align-items-center'>
-                  <img className='store-img' src={store.dataRes.data.image.large} />
+                  <img className='store-img' src={store.dataRes.data.image.large} alt='Crypto icon.' />
                   <div className='d-flex flex-column ms-3'>
                     <h3>
                       {store.dataRes.data.name}
