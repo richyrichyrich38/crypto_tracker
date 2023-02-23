@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import From from '../components/Form';
 
-
 const Contact = () => {
     return (
         <Container className='mt-4'>
