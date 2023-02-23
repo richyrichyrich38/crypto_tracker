@@ -39,3 +39,9 @@ input, textarea {
 input:not(:nth-child(2)), textarea {
     margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+    .form-container {
+        border-left: none;
+    }
+}
