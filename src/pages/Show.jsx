@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom'
 import showStore from '../stores/showStore'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import Header from '../components/Header'
-
 
 function Show() {
   const store = showStore()
@@ -21,7 +19,6 @@ function Show() {
 
   return (
     <>
-      <Header />
       <Container className='mt-4'>
         <Card>
           <Card.Body>
