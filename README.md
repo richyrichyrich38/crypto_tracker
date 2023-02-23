@@ -25,6 +25,11 @@ User Story - As cryptocurrencies gain popularity, we wanting to give users a sim
 ## [![HTML](https://img.shields.io/badge/HTML-2ea44f)](https://) [![CSS](https://img.shields.io/badge/CSS-3234a8)](https://) [![Javascipt](https://img.shields.io/badge/Javascipt-a8a232)](https://) ![React](https://img.shields.io/badge/React-7594f0) ![Bootstrap](https://img.shields.io/badge/Bootstrap-c064cc)
 
 ## Screenshots
+![home-page](https://user-images.githubusercontent.com/87676748/220881369-4740eece-d691-4fb2-b8fa-935cae424dd7.png)
+![contact-page](https://user-images.githubusercontent.com/87676748/220881379-10f9e8c9-3956-4471-8863-d87ef0186da7.png)
+![about-page](https://user-images.githubusercontent.com/87676748/220881392-261428bd-d7a8-46c3-8c14-7c9a7091928f.png)
+
+
 
 # Features
 
