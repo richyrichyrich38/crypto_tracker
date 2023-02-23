@@ -46,7 +46,7 @@ User Story - As cryptocurrencies gain popularity, we wanting to give users a sim
 
 # Live application
 
-https://testcrypto.netlify.app/
+https://thecryptovault.netlify.app/
 
 # Installation
 
