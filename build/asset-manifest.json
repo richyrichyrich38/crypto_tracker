@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.40551411.css",
+    "main.js": "/static/js/main.18a893c1.js",
+    "static/media/assets.png": "/static/media/assets.044653b8f5818a35b7c5.png",
+    "static/media/market-updates.png": "/static/media/market-updates.5e6746a9172bad9ae917.png",
+    "static/media/support.png": "/static/media/support.89687af67bbea9828060.png",
+    "static/media/about-illustration.png": "/static/media/about-illustration.93860afa7aa9d6707612.png",
+    "static/media/landing-illustration.png": "/static/media/landing-illustration.697794141971969b4999.png",
+    "static/media/bitcoin.png": "/static/media/bitcoin.04a7a4eb7798b7267e73.png",
+    "index.html": "/index.html",
+    "main.40551411.css.map": "/static/css/main.40551411.css.map",
+    "main.18a893c1.js.map": "/static/js/main.18a893c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40551411.css",
+    "static/js/main.18a893c1.js"
+  ]
+}
