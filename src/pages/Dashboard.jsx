@@ -1,8 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './dashboard.css';
+import React, { useEffect } from 'react';
 import { Row, Col, Container, Card, Button } from 'react-bootstrap';
+import homeStore from '../stores/homeStore';
+import { Link } from 'react-router-dom';
+import Bitcoin from '../bitcoin.png';
 
 function Dashboard() {
+    // For crypto cards
+    const store = homeStore();
+
+    useEffect(() => {
+        store.fetchCoins()
+    }, []);
+
     return (
         <Container id='dashboard' className='mt-4'>
             <Container>
@@ -18,98 +29,38 @@ function Dashboard() {
                                 <Card.Body>
                                     <div className='d-flex align-items-center justify-content-between'>
                                         <div className='d-flex align-items-center justify-content-center'>
-                                            <img className='crypto-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968260.png' alt='Crypto icon.' />
-                                            <div className="crypto-name d-flex flex-column">
-                                                <h4 className='mb-2'>BTC</h4>
-                                                <p>Bitcoin</p>
-                                            </div>
-                                        </div>
-                                        <div className='d-flex flex-column align-items-end'>
-                                            <p className='mb-2'>$ 21970.90</p>
-                                            <p>- 61.24(-0.28%)</p>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </a>
-
-                        <a href='#overview'>
-                            <Card>
-                                <Card.Body>
-                                    <div className='d-flex align-items-center justify-content-between'>
-                                        <div className='d-flex align-items-center justify-content-center'>
                                             <img className='crypto-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968260.png' alt='crypto' />
                                             <div className="crypto-name d-flex flex-column">
                                                 <h4 className='mb-2'>BTC</h4>
                                                 <p>Bitcoin</p>
                                             </div>
                                         </div>
-                                        <div className='d-flex flex-column align-items-end'>
-                                            <p className='mb-2'>$ 21970.90</p>
-                                            <p>- 61.24(-0.28%)</p>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-
-                            <Card>
-                                <Card.Body>
-                                    <div className='d-flex align-items-center justify-content-between'>
-                                        <div className='d-flex align-items-center justify-content-center'>
-                                            <img className='crypto-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968260.png' alt='crypto' />
-                                            <div className="crypto-name d-flex flex-column">
-                                                <h4 className='mb-2'>BTC</h4>
-                                                <p>Bitcoin</p>
-                                            </div>
-                                        </div>
-                                        <div className='d-flex flex-column align-items-end'>
-                                            <p className='mb-2'>$ 21970.90</p>
-                                            <p>- 61.24(-0.28%)</p>
-                                        </div>
                                     </div>
                                 </Card.Body>
                             </Card>
                         </a>
 
-                        <a href='#overview'>
-                            <Card>
-                                <Card.Body>
-                                    <div className='d-flex align-items-center justify-content-between'>
-                                        <div className='d-flex align-items-center justify-content-center'>
-                                            <img className='crypto-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968260.png' alt='crypto' />
-                                            <div className="crypto-name d-flex flex-column">
-                                                <h4 className='mb-2'>BTC</h4>
-                                                <p>Bitcoin</p>
-                                            </div>
-                                        </div>
-                                        <div className='d-flex flex-column align-items-end'>
-                                            <p className='mb-2'>$ 21970.90</p>
-                                            <p>- 61.24(-0.28%)</p>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </a>
-
-                        <a href='#overview'>
-                            <Card>
-                                <Card.Body>
-                                    <div className='d-flex align-items-center justify-content-between'>
-                                        <div className='d-flex align-items-center justify-content-center'>
-                                            <img className='crypto-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968260.png' alt='crypto' />
-                                            <div className="crypto-name d-flex flex-column">
-                                                <h4 className='mb-2'>BTC</h4>
-                                                <p>Bitcoin</p>
-                                            </div>
-                                        </div>
-                                        <div className='d-flex flex-column align-items-end'>
-                                            <p className='mb-2'>$ 21970.90</p>
-                                            <p>- 61.24(-0.28%)</p>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </a>
+                        {store.coins.slice(0, 4).map(coin => {
+                            return (
+                                <div key={coin.id} className="trending-list mt-2">
+                                    <Link to={`/${coin.id}`}>
+                                        <Card>
+                                            <Card.Body>
+                                                <div className='d-flex align-items-center justify-content-between'>
+                                                    <div className='d-flex align-items-center justify-content-center'>
+                                                        <img className='crypto-icon' src={coin.image} alt='Crypto icon.' />
+                                                        <div className="crypto-name d-flex flex-column">
+                                                            <h4 className='mb-2'>{coin.name}</h4>
+                                                            <p>{coin.symbol}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Card.Body>
+                                        </Card>
+                                    </Link>
+                                </div>
+                            )
+                        })}
                     </Container>
                 </Col>
                 <Col lg={6} md={7} sm={12}>
@@ -130,7 +81,10 @@ function Dashboard() {
                                 </div>
                             </div>
                             <hr />
-                            <h6 className='mb-3'>Performance over the last 90 days</h6>
+                            <h6 className='mb-3'>Performance over the last week</h6>
+                            <div className='d-flex justify-content-center'>
+                            <img src={Bitcoin} alt="Bitcoin graph." width="350px" />
+                            </div>
                             <div className='d-flex flex-column align-items-end'>
                                 <p className='graph-note'>The data shown above is for indicative purposes only and is subject to change. The actual execution price may differ. Please note that past performance is not necessarily indicative of future performance.</p>
                                 <div>
