@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css';
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -25,9 +26,9 @@ const Footer = () => {
                                 <Row>
                                     <Col lg={3} md={12} sm={12} className='mb-3'>
                                         <h5>Explore</h5>
-                                        <a href="/"><p className='mb-2'>Home</p></a>
-                                        <a href="/dashboard"><p className='mb-2'>Dashboard</p></a>
-                                        <a href="/about"><p>About</p></a>
+                                        <NavLink to="/"><p className='mb-2'>Home</p></NavLink>
+                                        <NavLink to="/dashboard"><p className='mb-2'>Dashboard</p></NavLink>
+                                        <NavLink to="/about"><p>About</p></NavLink>
                                     </Col>
                                     <Col lg={6} md={12} sm={12} className='mb-3'>
                                         <h5>Business</h5>
