@@ -24,10 +24,10 @@ const Contact = () => {
                         </div>
                         <p className='my-2'>In addition to our direct contact channels, you can also reach out to us through our social media platforms:</p>
                         <div className='socials d-flex mb-3'>
-                            <a href="#" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-facebook fa-xl" /></a>
-                            <a href="#" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-instagram fa-xl" /></a>
-                            <a href="#" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-twitter fa-xl" /></a>
-                            <a href="#" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin fa-xl" /></a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-facebook fa-xl" /></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-instagram fa-xl" /></a>
+                            <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-twitter fa-xl" /></a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin fa-xl" /></a>
                         </div>
                         <p className='my-2'>Follow us for updates, news, and insights about the world of cryptocurrencies.</p>
                     </Col>
